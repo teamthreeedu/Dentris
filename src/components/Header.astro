@@ -1,0 +1,61 @@
+---
+---
+
+<header class="bg-white shadow-lg fixed w-full top-0 z-50">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <div class="bg-gradient-to-r from-blue-600 to-teal-500 text-white px-4 py-2 rounded-lg font-bold text-xl">
+          Dentris
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        <a href="/" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Inicio</a>
+        <a href="/nosotros" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Nosotros</a>
+        <a href="/servicios" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Servicios</a>
+        <a href="/precios" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Precios</a>
+        <a href="/contacto" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Contacto</a>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="tel:+52-993-123-4567" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition duration-300 font-medium">
+          Llamar Ahora
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+      <div class="flex flex-col space-y-4">
+        <a href="/" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Inicio</a>
+        <a href="/nosotros" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Nosotros</a>
+        <a href="/servicios" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Servicios</a>
+        <a href="/precios" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Precios</a>
+        <a href="/contacto" class="text-gray-700 hover:text-blue-600 transition duration-300 font-medium">Contacto</a>
+        <a href="tel:+52-993-123-4567" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition duration-300 font-medium text-center">
+          Llamar Ahora
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
